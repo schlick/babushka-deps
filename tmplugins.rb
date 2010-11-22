@@ -5,11 +5,13 @@ dep 'textmate plugins' do
   requires 'AckMate.tmplugin'
 end
 
+# https://github.com/protocool/AckMate
 dep 'AckMate.tmplugin' do
   requires 'ackrc'
   source 'http://github.com/downloads/protocool/AckMate/AckMate.1.1.2.zip'
 end
 
+# https://github.com/protocool/AckMate/wiki
 dep 'ackrc' do
   helper :path do
     '~/.ackrc'
