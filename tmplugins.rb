@@ -20,7 +20,8 @@ dep 'ackrc' do
   meet do
     file_contents = "--type-add=ruby=.haml
 --type-add=ruby=.scss
---type-add=ruby=.sass"
+--type-add=ruby=.sass
+--type-add=ruby=.feature"
     File.open(path.p, 'w') { |file| file.write(file_contents)}
   end
 end
