@@ -21,3 +21,4 @@ meta :nginx do
       end
     end
   }
+end
