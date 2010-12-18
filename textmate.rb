@@ -21,6 +21,8 @@ dep 'textmate defaults' do
   shell %{defaults write com.macromates.textmate OakTextViewLineNumbersEnabled -bool true}
   shell %{defaults write com.macromates.textmate OakTextViewIndentedPasteEnabled -bool false}
   shell %{defaults write com.macromates.textmate OakFolderReferenceFolderPattern -string "!.*/(\\.[^/]*|coverage|CVS|_darcs|_MTN|\\{arch\\}|blib|.*~\\.nib|.*\\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$"}
+  shell %{defaults write com.macromates.textmate OakTextViewNormalFontName -string "Inconsolata"}
+  shell %{defaults write com.macromates.textmate OakTextViewNormalFontSize -int 16}
 end
 
 dep 'textmate not running' do
