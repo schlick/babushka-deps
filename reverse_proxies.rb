@@ -54,3 +54,8 @@ dep 'trial-exam.local' do
   project_path '~/amc/non-core/trial-exam'
   port '3010'
 end
+
+dep 'gems.local' do
+  project_path '~/repos/sinatra-rubygems'
+  port '3011'
+end
