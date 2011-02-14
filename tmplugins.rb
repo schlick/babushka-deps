@@ -21,7 +21,9 @@ dep 'ackrc' do
     file_contents = "--type-add=ruby=.haml
 --type-add=ruby=.scss
 --type-add=ruby=.sass
---type-add=ruby=.feature"
+--type-add=ruby=.feature
+--type-set=sql=.sql
+--nosql"
     File.open(path.p, 'w') { |file| file.write(file_contents)}
   end
 end
