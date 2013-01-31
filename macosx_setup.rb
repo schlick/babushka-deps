@@ -3,6 +3,7 @@
 
 dep 'macosx setup' do
   requires 'prevent .ds_store file creation on network volumes'
+  requires 'configure global git settings'
 end
 
 ### Individual deps...
