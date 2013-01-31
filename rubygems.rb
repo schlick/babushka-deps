@@ -1,16 +1,8 @@
 dep 'setup rubygems' do
-  requires 'rubygems', 'config .gemrc', 'hanna.gem'
+  requires 'rubygems', 'create .gemrc'
 end
 
-dep 'config .gemrc' do
-  setup { render_erb "config/gemrc.erb", :to => "~/.gemrc" }
-end
-
-# currently installed version 2.3.0
-dep 'hanna.gem' do
-end
-
-# regenerate existing rdocs
-dep 'regenerate rdoc' do
-  setup { shell "gem rdoc --all --no-ri" }
+dep 'create .gemrc' do
+  source = File.dirname(load_path)
+  shell %{ cp "#{source}"/config/gemrc ~/.gemrc }
 end
